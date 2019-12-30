@@ -1,8 +1,5 @@
-;;; init-vue.el --- Version control support -*- lexical-binding: t -*-
+;;; init-vue.el --- vue support -*- lexical-binding: t -*-
 ;;; Commentary:
-
-;; Most version control packages are configured separately: see
-;; init-git.el, for example.
 
 ;;; Code:
 
@@ -13,7 +10,7 @@
 (add-hook 'web-mode-hook #'lsp-deferred)
 (require-package 'lsp-ui)
 (require-package 'company-lsp)
-(require-package 'helm-lsp)
+;;(require-package 'helm-lsp)
 (require-package 'lsp-treemacs)
 ;; optionally if you want to use debugger
 (require-package 'dap-mode)

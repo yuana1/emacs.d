@@ -1,4 +1,4 @@
-;;; init-vue.el --- Support for vue -*- lexical-binding: t -*-
+;;; init-java.el --- Support for java -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 
@@ -12,4 +12,4 @@
 (require-package 'dap-mode)
 
 (provide 'init-java)
-;;; init-rust.el ends here
+;;; init-java.el ends here

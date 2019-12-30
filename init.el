@@ -10,10 +10,6 @@
 ;;(setq debug-on-error t)
 
 
-(setq package-archives '(("gnu"   . "http://mirrors.163.com/elpa/gnu/")
-                        ("melpa" . "http://mirrors.163.com/elpa/melpa/")))
-
-
 (let ((minver "24.4"))
   (when (version< emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
