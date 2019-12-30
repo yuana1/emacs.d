@@ -10,8 +10,8 @@
 ;;(setq debug-on-error t)
 
 
-(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-                        ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+(setq package-archives '(("gnu"   . "http://mirrors.163.com/elpa/gnu/")
+                        ("melpa" . "http://mirrors.163.com/elpa/melpa/")))
 
 
 (let ((minver "24.4"))
