@@ -9,6 +9,11 @@
 ;; Produce backtraces when errors occur: can be helpful to diagnose startup issues
 ;;(setq debug-on-error t)
 
+
+(setq package-archives '(("gnu"   . "http://mirrors.163.com/elpa/gnu/")
+                        ("melpa" . "http://mirrors.163.com/elpa/melpa/")))
+
+
 (let ((minver "24.4"))
   (when (version< emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
@@ -58,7 +63,7 @@
 (require 'init-frame-hooks)
 (require 'init-xterm)
 (require 'init-themes)
-(require 'init-osx-keys)
+;;(require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-dired)
 (require 'init-isearch)
@@ -103,7 +108,7 @@
 (require 'init-vue)
 (require 'init-java)
 ;;(require 'init-http)
-;;(require 'init-python)
+(require 'init-python)
 ;;(require 'init-haskell)
 ;;(require 'init-elm)
 ;;(require 'init-purescript)
@@ -138,9 +143,9 @@
 ;;(require 'init-ledger)
 ;; Extra packages which don't require any configuration
 
-(require-package 'gnuplot)
+;;(require-package 'gnuplot)
 ;;(require-package 'lua-mode)
-(require-package 'htmlize)
+;;(require-package 'htmlize)
 ;;(require-package 'dsvn)
 (when *is-a-mac*
   (require-package 'osx-location))
