@@ -10,10 +10,6 @@
 ;;(setq debug-on-error t)
 
 
-(setq package-archives '(("gnu"   . "http://mirrors.163.com/elpa/gnu/")
-                        ("melpa" . "http://mirrors.163.com/elpa/melpa/")))
-
-
 (let ((minver "24.4"))
   (when (version< emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
@@ -35,6 +31,8 @@
   (add-hook 'emacs-startup-hook
             (lambda () (setq gc-cons-threshold normal-gc-cons-threshold))))
 
+(setq package-archives '(("gnu"   . "http://mirrors.163.com/elpa/gnu/")
+                         ("melpa" . "http://mirrors.163.com/elpa/melpa/")))
 ;;----------------------------------------------------------------------------
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
@@ -90,7 +88,7 @@
 
 (require 'init-projectile)
 
-(require 'init-compile)
+;;(require 'init-compile)
 ;;(require 'init-crontab)
 ;;(require 'init-textile)
 (require 'init-markdown)
@@ -101,9 +99,10 @@
 ;;(require 'init-org)
 ;;(require 'init-nxml)
 ;;(require 'init-html)
-(require 'init-vue)
 ;;(require 'init-css)
 ;;(require 'init-haml)
+(require 'init-vue)
+(require 'init-java)
 ;;(require 'init-http)
 (require 'init-python)
 ;;(require 'init-haskell)

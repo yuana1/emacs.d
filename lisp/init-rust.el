@@ -2,11 +2,15 @@
 ;;; Commentary:
 ;;; Code:
 
-(when (maybe-require-package 'rust-mode)
-  (when (maybe-require-package 'racer)
-    (add-hook 'rust-mode-hook #'racer-mode))
-  (when (maybe-require-package 'company)
-    (add-hook 'racer-mode-hook #'company-mode)))
+(require-package 'rust-mode)
+(require-package 'lsp-mode)
+(add-hook 'rust-mode-hook #'lsp-deferred)
+;; Optionally
+(require-package 'lsp-ui)
+(require-package 'company-lsp)
+(require-package 'lsp-treemacs)
+;; optionally if you want to use debugger
+(require-package 'dap-mode)
 
 (when (maybe-require-package 'flycheck-rust)
   (after-load 'rust-mode
