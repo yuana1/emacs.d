@@ -110,6 +110,7 @@
 ;;(require 'init-purescript)
 ;;(require 'init-ruby)
 ;;(require 'init-rails)
+(require 'init-go)
 (require 'init-sql)
 (require 'init-rust)
 (require 'init-toml)
