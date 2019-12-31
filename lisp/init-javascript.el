@@ -30,6 +30,9 @@
   (add-hook 'js2-mode-hook 'sanityinc/enable-js2-checks-if-flycheck-inactive)
 
   (add-hook 'js2-mode-hook (lambda () (setq mode-name "JS2")))
+  '(progn
+       (add-hook 'js2-mode-hook #'add-node-modules-path)
+       (add-hook 'js2-mode-hook #'prettier-js-mode))
 
   (js2-imenu-extras-setup))
 
