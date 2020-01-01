@@ -40,13 +40,16 @@
 (require 'init-elpa)
 (require 'init-ibuffer)
 (require-package 'diminish)
+(require 'init-exec-path)
 (require 'init-ivy)
+(require 'init-company)
 (require 'init-projectile)
 (require 'init-editing-utils)
 (require 'init-magit)
-
+;;(require 'init-flycheck)
 (require 'init-smex)
-(require 'init-exec-path)
+
+
 (require 'init-lsp)
 (require 'init-rust)
 (require 'init-java)
