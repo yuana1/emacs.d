@@ -7,7 +7,9 @@
 
 (defun mvnCreate ()  
   (interactive)
-  (async-shell-command "mvn archetype:generate -DarchetypeCatalog=internal")
+  
+  (async-shell-command "mvn archetype:generate -DarchetypeCatalog=internal" "mvn")
+  (switch-to-buffer "mvn")
   )
 (defun mvnStop()
   (interactive)
@@ -15,5 +17,7 @@
   )
 (require-package 'fullframe)
 (fullframe mvnCreate mvnStop)
+
+
 (provide 'init-java)
 ;;; init-java.el ends here
