@@ -2,7 +2,6 @@
 ;;; Commentary:
 
 ;;; Code:
-
 (require-package 'web-mode)
 (require-package 'prettier-js)
 (require-package 'add-node-modules-path)
@@ -18,9 +17,14 @@
 (require-package 'lsp-mode)
 (add-hook 'web-mode-hook #'lsp-deferred)
 (eval-after-load 'web-mode
-    '(progn
-       (add-hook 'web-mode-hook #'add-node-modules-path)
-       (add-hook 'web-mode-hook #'prettier-js-mode)))
+  '(progn
+     (add-hook 'web-mode-hook '(lambda ()
+				 (setq web-mode-markup-indent-offset 2
+				       web-mode-css-indent-offset 2
+				       web-mode-code-indent-offset 2)
+                                 ))
+     (add-hook 'web-mode-hook #'add-node-modules-path)
+     (add-hook 'web-mode-hook #'prettier-js-mode)))
 
 (provide 'init-web-js-ts-react-vue)
 ;;; init-vue.el ends here
