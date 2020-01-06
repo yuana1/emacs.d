@@ -27,4 +27,4 @@
      (add-hook 'web-mode-hook #'prettier-js-mode)))
 
 (provide 'init-web-js-ts-react-vue)
-;;; init-vue.el ends here
+;;; init-web-js-ts-react-vue.el ends here
