@@ -57,6 +57,7 @@
 (require 'init-smex)
 (require 'init-misc)
 
+(require 'init-oxorg)
 (require 'init-lsp)
 (require 'init-rust)
 (require 'init-java)
