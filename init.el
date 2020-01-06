@@ -29,7 +29,7 @@
   (run-with-idle-timer 5 t #'garbage-collect)
   ;; 显示垃圾回收信息，这个可以作为调试用
   ;; (setq garbage-collection-messages t)
-  ) 
+  )
 ;;(let ((normal-gc-cons-threshold (* 20 1024 1024))
 ;;      (init-gc-cons-threshold (* 128 1024 1024)))
 ;;  (setq gc-cons-threshold init-gc-cons-threshold)
@@ -42,18 +42,7 @@
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-;; 一些配置
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(tool-bar-mode nil)
- )
 
-(global-set-key [(ctrl f12)] 'set-mark-command)
-
-;;(global-set-key (kbd "C-f1") 'set-mark-command)
 (require 'init-utils)
 (require 'init-elpa)
 (require 'init-ibuffer)
@@ -66,7 +55,7 @@
 (require 'init-magit)
 (require 'init-flycheck)
 (require 'init-smex)
-
+(require 'init-misc)
 
 (require 'init-lsp)
 (require 'init-rust)
