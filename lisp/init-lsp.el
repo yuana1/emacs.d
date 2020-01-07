@@ -13,9 +13,9 @@
   (add-hook 'treemacs-mode
             (setq treemacs-git-mode nil))
   )
-
+(require-package 'ripgrep)
 ;;(require-package 'lsp-ui )
-(require-package 'company-lsp ) 
+(require-package 'company-lsp) 
 (require-package 'lsp-ivy )
 (require-package 'lsp-treemacs )
 ;; optionally if you want to use debugger
