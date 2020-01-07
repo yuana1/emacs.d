@@ -9,7 +9,10 @@
  ;; If there is more than one, they won't work right.
  '(tool-bar-mode nil)
  )
-
+;; 默认使用utf-8
+(setq default-buffer-file-coding-system 'utf-8)
+;; 有限使用utf-8
+(prefer-coding-system 'utf-8)
 (global-set-key [(ctrl f12)] 'set-mark-command)
 ;;(global-set-key (kbd "C-f1") 'set-mark-command)
 

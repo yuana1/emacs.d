@@ -4,7 +4,13 @@
   (add-hook 'lsp-mode 
 	    (setq lsp-prefer-flymake nil))
   )
-(require-package 'lsp-ui )
+
+(after-load 'treemacs-mode
+  (add-hook 'treemacs-mode
+            (setq treemacs-git-mode nil))
+  )
+
+;;(require-package 'lsp-ui )
 (require-package 'company-lsp ) 
 (require-package 'lsp-ivy )
 (require-package 'lsp-treemacs )

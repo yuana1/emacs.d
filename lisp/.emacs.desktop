@@ -1,0 +1,31 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Jan  6 14:15:09 2020
+;; Desktop file format version 208
+;; Emacs version 27.0.60
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24082 53357 157756 0) (desktop . "208") "htcs@ZHAOKAIYUAN" nil nil ((((minibuffer . t) (undecorated) (skip-taskbar) (font . "-outline-YaHei Consolas Hybrid-normal-normal-normal-mono-16-*-*-*-c-*-iso8859-1") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "SystemWindowText") (background-color . "SystemWindow") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-focus-on-map) (no-accept-focus) (no-special-glyphs) (alpha) (menu-bar-lines . 1) (tab-bar-lines . 0) (height . 38) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 17) (scroll-bar-height . 17) (fullscreen) (z-group) (visibility . t) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (last-focus-update . t) (frameset--id . "456F-5EE0-BC33-1A4B") (frameset--mini t . t) (width . 80) (modeline . t) (unsplittable) (left . 78) (top . 78) (icon-name) (display . "w32") (explicit-name) (tool-bar-position . top)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 84) (min-pixel-width . 90) (min-pixel-height-ignore . 42) (min-pixel-width-ignore . 54) (min-pixel-height-safe . 21) (min-pixel-width-safe . 18)) leaf (pixel-width . 753) (pixel-height . 777) (total-width . 83) (total-height . 37) (normal-height . 1.0) (normal-width . 1.0) (buffer "init-misc.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("*scratch*" 1 146))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '(#("c:/Users/htcs/.emacs.d/lisp/" 0 28 (ivy-index 0)) #("c:/Users/htcs/.emacs.d/lisp/init-misc.el" 0 40 (ivy-index 0))))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "c:/Users/htcs/.emacs.d/lisp/init-misc.el"
+  "init-misc.el"
+  'emacs-lisp-mode
+  '(eldoc-mode flycheck-mode which-key-mode hes-mode whole-line-or-region-local-mode page-break-lines-mode beacon-mode global-auto-revert-mode projectile-mode company-mode ivy-mode counsel-mode symbol-overlay-mode rainbow-delimiters-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24082 53356 625644 0) (buffer-file-coding-system . utf-8-dos))
+  '((mark-ring nil)))
+
