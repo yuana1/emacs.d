@@ -51,3 +51,8 @@ site-lisp/package/
 .cache/
 /forge-database.sqlite
 /transient
+/elpa-26.3
+/eclipse.jdt.ls
+/elpa
+/auto-save-list
+/workspace
