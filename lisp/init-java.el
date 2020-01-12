@@ -5,18 +5,18 @@
 (require-package 'lsp-java)
 (add-hook 'java-mode-hook #'lsp-deferred)
 
-(defun mvnCreate ()  
+(defun mvn-create ()  
   (interactive)
   
   (async-shell-command "mvn archetype:generate -DarchetypeCatalog=internal" "mvn")
   (switch-to-buffer "mvn")
   )
-(defun mvnStop()
+(defun mvn-stop()
   (interactive)
   
   )
 (require-package 'fullframe)
-(fullframe mvnCreate mvnStop)
+(fullframe mvn-create mvn-stop)
 
 
 (provide 'init-java)
