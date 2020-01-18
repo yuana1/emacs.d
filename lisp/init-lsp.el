@@ -14,7 +14,7 @@
             (setq treemacs-git-mode nil))
   )
 (require-package 'ripgrep)
-;;(require-package 'lsp-ui )
+(require-package 'lsp-ui )
 (require-package 'company-lsp) 
 (require-package 'lsp-ivy )
 (require-package 'lsp-treemacs )
