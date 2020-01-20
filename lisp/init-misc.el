@@ -21,9 +21,13 @@
 ;; use only one desktop
 (setq desktop-path '("~/.emacs.d/"))
 (setq desktop-dirname "~/.emacs.d/")
+
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
 (require-package 'string-inflection)
 (global-set-key (kbd "C-c C-u") 'string-inflection-python-style-cycle)
+
+(setq x-select-enable-clipboard-manager nil)
+
 (provide 'init-misc)
 ;;; init-misc.el ends here
