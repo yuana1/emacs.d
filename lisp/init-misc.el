@@ -28,6 +28,7 @@
 (global-set-key (kbd "C-c C-u") 'string-inflection-python-style-cycle)
 
 (setq x-select-enable-clipboard-manager nil)
+(setq magit-refresh-status-buffer nil)
 
 (provide 'init-misc)
 ;;; init-misc.el ends here
